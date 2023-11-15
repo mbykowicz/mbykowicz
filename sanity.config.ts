@@ -2,6 +2,8 @@
  * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...index]]/page.tsx` route
  */
 
+// [ ]: Check unused consts
+
 import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
@@ -44,8 +46,8 @@ export default defineConfig({
     documentInternationalization({
       // Required configuration
       supportedLanguages: [
-        { id: 'pl', title: 'Polish' },
-        { id: 'en', title: 'English' },
+        { id: 'pl-PL', title: 'Polish' },
+        { id: 'en-US', title: 'English' },
       ],
       schemaTypes: ['menu', 'hero'],
     }),
