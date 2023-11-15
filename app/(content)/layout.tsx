@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter as FontSans } from 'next/font/google'
-import './globals.css'
+import '../globals.css'
+import Navigation from '@/components/elements/Navigation'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={fontSans.variable}>{children}</body>
+      <body className={fontSans.variable}>
+        <Navigation />
+        <main>{children}</main>
+      </body>
     </html>
   )
 }
