@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --navbar-height: 64px;
+  --navbar-top-margin: 24px;
+}
+
+@layer base {
+  * {
+    @apply focus-visible:outline-2 focus-visible:outline-mountain-meadow-500;
+  }
+}
