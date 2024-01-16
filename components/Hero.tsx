@@ -9,13 +9,13 @@ import ArrowDownRightIcon from './icons/ArrowDownRightIcon'
 
 function Hero() {
   return (
-    <div className='flex items-center mt-[calc(var(--navbar-height))] pt-16 lg:pt-32 bg-cover bg-hero-bg-image'>
+    <div className='flex items-center mt-[calc(var(--navbar-height))] py-16 lg:py-32 bg-cover bg-hero-bg-image'>
       <div className='grid w-full grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0'>
         <div className='text-center lg:text-left'>
-          <h3 className='uppercase font-semibold sm:text-xl xl:text-[28px] tracking-wide bg-hero-text-gradient inline-block text-transparent bg-clip-text'>
+          <h3 className='uppercase font-semibold text-xs xs:text-sm sm:text-lg xl:text-[28px] tracking-wide bg-hero-text-gradient inline-block text-transparent bg-clip-text'>
             Fullstack Developer and UI Designer
           </h3>
-          <h1 className='text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl'>
+          <h1 className='text-5xl font-bold tracking-tight text-gray-900 xs:text-6xl sm:text-8xl'>
             Crafting
             <br />
             Digital
@@ -32,8 +32,8 @@ function Hero() {
         <div className='flex justify-center gap-20 mt-10 lg:justify-end lg:place-self-end'>
           <div className='space-y-20 '>
             <div className='space-y-4 lg:max-w-fit'>
-              <p className='flex items-center justify-center gap-4 text-lg text-gray-500 lg:justify-normal xl:text-2xl'>
-                <ArrowDownRightIcon className='w-6 h-6 text-mountain-meadow-600' />
+              <p className='flex items-center justify-center gap-4 text-lg text-center text-gray-500 lg:text-left lg:justify-normal xl:text-2xl'>
+                <ArrowDownRightIcon className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
                 See how I work on projects
               </p>
               <Button variant='secondary' className='block mx-auto lg:mx-0'>
@@ -41,8 +41,8 @@ function Hero() {
               </Button>
             </div>
             <div className='space-y-4 lg:max-w-fit'>
-              <p className='flex items-center justify-center gap-4 text-lg text-gray-500 lg:justify-normal xl:text-2xl'>
-                <ArrowDownRightIcon className='w-6 h-6 text-mountain-meadow-600' />
+              <p className='flex items-center justify-center gap-4 text-lg text-center text-gray-500 lg:text-left lg:justify-normal xl:text-2xl'>
+                <ArrowDownRightIcon className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
                 Let&apos;s start your new project together
               </p>
               <Button className='block mx-auto lg:mx-0'>Contact me</Button>

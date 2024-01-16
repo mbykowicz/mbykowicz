@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '400px',
+      },
       colors: {
         'mountain-meadow': {
           '50': 'hsl(152, 81%, 96%)',
