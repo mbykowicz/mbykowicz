@@ -9,41 +9,43 @@ import ArrowDownRightIcon from './icons/ArrowDownRightIcon'
 
 function Hero() {
   return (
-    <div className='flex items-center h-[calc(100vh-var(--navbar-height)-var(--navbar-top-margin))] bg-hero-bg-image bg-cover'>
-      <div className='flex items-end w-full'>
-        <div className='flex-1'>
-          <h3 className='uppercase font-semibold text-[28px] tracking-wide bg-hero-text-gradient inline-block text-transparent bg-clip-text'>
+    <div className='flex items-center mt-[calc(var(--navbar-height))] pt-16 lg:pt-32 bg-cover bg-hero-bg-image'>
+      <div className='grid w-full grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0'>
+        <div className='text-center lg:text-left'>
+          <h3 className='uppercase font-semibold sm:text-xl xl:text-[28px] tracking-wide bg-hero-text-gradient inline-block text-transparent bg-clip-text'>
             Fullstack Developer and UI Designer
           </h3>
-          <h1 className='font-bold tracking-tight text-gray-900 text-8xl'>
+          <h1 className='text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl'>
             Crafting
             <br />
             Digital
             <br />
             Experiences
           </h1>
-          <div className='flex items-center gap-10 mt-16'>
-            <Image src={reactLogo} alt='ReactJS logo' />
-            <Image src={nextLogo} alt='NextJS logo' />
-            <Image src={laravelLogo} alt='Laravel logo' />
-            <Image src={tailwindLogo} alt='TailwindCSS logo' />
+          <div className='items-center hidden gap-4 mt-8 lg:flex lg:mt-16'>
+            <Image src={reactLogo} alt='ReactJS logo' className='' />
+            <Image src={nextLogo} alt='NextJS logo' className='' />
+            <Image src={laravelLogo} alt='Laravel logo' className='' />
+            <Image src={tailwindLogo} alt='TailwindCSS logo' className='' />
           </div>
         </div>
-        <div className='flex justify-end flex-1 gap-20'>
-          <div className='space-y-20'>
-            <div className='space-y-4 max-w-fit'>
-              <p className='flex items-center gap-4 text-2xl text-gray-500'>
+        <div className='flex justify-center gap-20 mt-10 lg:justify-end lg:place-self-end'>
+          <div className='space-y-20 '>
+            <div className='space-y-4 lg:max-w-fit'>
+              <p className='flex items-center justify-center gap-4 text-lg text-gray-500 lg:justify-normal xl:text-2xl'>
                 <ArrowDownRightIcon className='w-6 h-6 text-mountain-meadow-600' />
                 See how I work on projects
               </p>
-              <Button variant='secondary'>Learn more</Button>
+              <Button variant='secondary' className='block mx-auto lg:mx-0'>
+                Learn more
+              </Button>
             </div>
-            <div className='space-y-4 max-w-fit'>
-              <p className='flex items-center gap-4 text-2xl text-gray-500'>
+            <div className='space-y-4 lg:max-w-fit'>
+              <p className='flex items-center justify-center gap-4 text-lg text-gray-500 lg:justify-normal xl:text-2xl'>
                 <ArrowDownRightIcon className='w-6 h-6 text-mountain-meadow-600' />
                 Let&apos;s start your new project together
               </p>
-              <Button>Contact me</Button>
+              <Button className='block mx-auto lg:mx-0'>Contact me</Button>
             </div>
           </div>
         </div>
