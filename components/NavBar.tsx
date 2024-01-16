@@ -32,7 +32,7 @@ const items = [
 function NavBar() {
   const pathname = usePathname()
 
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className='flex items-center justify-between w-full h-[var(--navbar-height)] mt-[var(--navbar-top-margin)]'>
