@@ -43,7 +43,7 @@ function NavBar() {
       </Link>
 
       <nav
-        className={`absolute inset-y-0 right-0 z-40 w-2/3 px-12 py-12 bg-white border shadow-md space-y-12 lg:static lg:py-0 lg:w-auto lg:rounded-full shadow-gray-100 transition-all lg:translate-x-0 ${
+        className={`fixed inset-y-0 right-0 z-40 w-4/5 sm:w-3/5 px-12 py-12 bg-white/80 backdrop-blur-lg border shadow-md space-y-12 lg:static lg:py-0 lg:w-auto lg:rounded-full shadow-gray-100 transition-all lg:translate-x-0 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
