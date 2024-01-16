@@ -17,11 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={`${inter.className} container mx-auto max-w-7xl px-6 xl:px-0`}
-      >
-        <NavBar />
-        {children}
+      <body className={`${inter.className}`}>
+        <div className='container px-6 mx-auto max-w-7xl xl:px-0'>
+          <NavBar />
+          {children}
+        </div>
       </body>
     </html>
   )
