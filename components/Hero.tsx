@@ -5,7 +5,7 @@ import nextLogo from '@/public/next.svg'
 import laravelLogo from '@/public/laravel.svg'
 import tailwindLogo from '@/public/tailwind.svg'
 import Button from './ui/Button'
-import ArrowDownRightIcon from './icons/ArrowDownRightIcon'
+import { RiArrowRightDownLine } from 'react-icons/ri'
 
 function Hero() {
   return (
@@ -33,7 +33,7 @@ function Hero() {
           <div className='space-y-20 '>
             <div className='space-y-4 lg:max-w-fit'>
               <p className='flex items-center justify-center gap-4 text-lg text-center text-gray-500 lg:text-left lg:justify-normal xl:text-2xl'>
-                <ArrowDownRightIcon className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
+                <RiArrowRightDownLine className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
                 See how I work on projects
               </p>
               <Button variant='secondary' className='block mx-auto lg:mx-0'>
@@ -42,7 +42,7 @@ function Hero() {
             </div>
             <div className='space-y-4 lg:max-w-fit'>
               <p className='flex items-center justify-center gap-4 text-lg text-center text-gray-500 lg:text-left lg:justify-normal xl:text-2xl'>
-                <ArrowDownRightIcon className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
+                <RiArrowRightDownLine className='hidden w-6 h-6 lg:inline text-mountain-meadow-600' />
                 Let&apos;s start your new project together
               </p>
               <Button className='block mx-auto lg:mx-0'>Contact me</Button>
