@@ -40,8 +40,7 @@ function Icon({ is, className }: IType) {
 
 function Banner() {
   return (
-    <div className='relative w-full my-32'>
-      <div className='absolute inset-y-0 -z-10 min-w-screen -left-full -right-full bg-gradient-to-b from-mountain-meadow-50 to-transparent'></div>
+    <div className='flex justify-center full-width bg-gradient-to-b from-mountain-meadow-50 to-transparent'>
       <div className='flex flex-col items-center justify-center py-12'>
         <div className='max-w-lg space-y-1 text-center sm:max-w-xl'>
           <h3 className='text-xs font-semibold tracking-wide uppercase sm:text-sm text-mountain-meadow-700'>

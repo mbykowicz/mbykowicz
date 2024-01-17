@@ -9,7 +9,7 @@ import ArrowDownRightIcon from './icons/ArrowDownRightIcon'
 
 function Hero() {
   return (
-    <div className='flex items-center mt-[calc(var(--navbar-height))] py-16 lg:py-32 bg-cover bg-hero-bg-image'>
+    <div className='flex items-center mt-[calc(var(--navbar-height))] py-16 lg:py-32 '>
       <div className='grid w-full grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0'>
         <div className='text-center lg:text-left'>
           <h3 className='uppercase font-semibold text-xs xs:text-sm sm:text-lg xl:text-[28px] tracking-wide bg-hero-text-gradient inline-block text-transparent bg-clip-text'>
