@@ -93,7 +93,7 @@ function NavBar() {
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className='relative z-50 grid border border-gray-200 rounded-full place-content-center ring-4 ring-gray-100 w-14 h-14 lg:hidden'
+          className='relative z-50 grid border border-gray-200 bg-white/80 backdrop-blur-lg rounded-full place-content-center ring-4 ring-gray-100 w-14 h-14 lg:hidden'
         >
           <RiMenuFill className='w-6 h-6 text-gray-600' />
         </button>
